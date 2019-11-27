@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF8C3F</color>
+    <color name="colorPrimaryDark">#FF6E40</color>
+    <color name="colorAccent">#ff793f</color>
+    <color name="colorDark">#121212</color>
+    <color name="colorBackground">#ebebeb</color>
+    <color name="colorEdit">#F1F1F1</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorDarkblue">#1565C0</color>
+    <color name="textGray">#40000000</color>
+    <color name="iconColor">#F9B54C</color>
+
+    <!--color pallete-->
+    <color name="white">#dde6ec</color>
+    <color name="blue">#7ec4ed</color>
+    <color name="yellow">#ffc107</color>
+    <color name="pink">#ed579a</color>
+    <color name="green">#2aed76</color>
+    <color name="orange">#ff5722</color>
+    <color name="cyan">#4DD0E1</color>
+    <color name="purple">#BA68C8</color>
+    <color name="softred">#EF5350</color>
+    <color name="darkgreen">#AED581</color>
+
+    <array name="demo_colors">
+        <item>@color/white</item>
+        <item>@color/blue</item>
+        <item>@color/yellow</item>
+        <item>@color/pink</item>
+        <item>@color/green</item>
+        <item>@color/orange</item>
+        <item>@color/cyan</item>
+        <item>@color/purple</item>
+        <item>@color/softred</item>
+        <item>@color/darkgreen</item>
+    </array>
+</resources>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".activity.ProfileActivity"
+    tools:ignore="PrivateResource">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground">
+
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/colorAccent"
+        />
+
+        <ImageButton
+            android:id="@+id/backToMain"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:padding="30dp"
+            android:layout_marginStart="20dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:contentDescription="@string/back"
+            android:background="@drawable/ic_back"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                >
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="5dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/bunder"
+                    android:contentDescription="My face"
+                    android:layout_centerHorizontal="true"
+                    android:translationZ="999dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    >
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="85dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        app:contentPadding="15dp"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="2dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+
+                            <TextView
+                                android:id="@+id/biodata"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Tentang Saya"
+                                android:textStyle="bold"
+                                android:layout_gravity="center"
+                                android:textSize="28sp"
+                                android:textColor="@color/colorBlack"
+                                android:layout_marginBottom="25dp"
+                                android:layout_marginTop="70dp"
+                                />
+
+                            <TextView
+                                android:id="@+id/nama"
+                                android:layout_above="@id/biodata"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Nama"
+                                />
+
+                            <TextView
+                                android:id="@+id/txtnama"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Muhammad Ilham Arsyam"
+                                android:textSize="18sp"
+                                android:layout_gravity="center"
+                                android:layout_margin="10dp"
+                                android:textColor="@color/colorBlack"
+                                />
+
+                            <TextView
+                                android:id="@+id/ttl"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Tempat, Tanggal Lahir"
+                                />
+
+                            <TextView
+                                android:id="@+id/txtttl"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Surakarta, 29 Juli 2002"
+                                android:textSize="18sp"
+                                android:layout_gravity="center"
+                                android:layout_margin="10dp"
+                                android:textColor="@color/colorBlack"
+                                />
+
+
+                            <TextView
+                                android:id="@+id/hp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="No. Telepon"
+                                />
+
+                            <TextView
+                                android:id="@+id/txthp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="+62 838 4273 6366"
+                                android:textSize="18sp"
+                                android:autoLink="phone"
+                                android:layout_gravity="center"
+                                android:layout_margin="10dp"
+                                />
+
+                            <TextView
+                                android:id="@+id/email"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Email"
+                                />
+
+                            <TextView
+                                android:id="@+id/txtemail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ilham.arsyam@gmail.com"
+                                android:textSize="18sp"
+                                android:autoLink="email"
+                                android:layout_gravity="center"
+                                android:layout_margin="10dp"
+                                />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:text="Kontak Saya"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@color/colorBackground"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_whatsapp"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:layout_marginEnd="20dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:drawableStart="@drawable/whatsapp" />
+
+                <Button
+                    android:id="@+id/btn_instagram"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:layout_marginEnd="20dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:drawableStart="@drawable/instagram"/>
+
+                <Button
+                    android:id="@+id/btn_telegram"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:layout_marginEnd="20dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:drawableStart="@drawable/telegram"/>
+
+                <Button
+                    android:id="@+id/btn_facebook"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:drawableStart="@drawable/facebook"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

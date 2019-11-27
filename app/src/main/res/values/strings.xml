@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Cathetan</string>
+    <string name="action_settings">Settings</string>
+    <string name="add_note">Tulis Catatan</string>
+    <string name="title">Judul</string>
+    <string name="enter_note">Tulis Catatan</string>
+    <string name="date">29/07/2002</string>
+    <string name="snackbar_text">Catatan berhasil dihapus</string>
+    <string name="snackbar_undo">Urungkan</string>
+    <string name="toast_copy">Catatan tersalin</string>
+    <string name="copy_to_clipboard">Salin ke papan klip</string>
+    <string name="alert_confirm">Konfirmasi !</string>
+    <string name="alert_delete">Yakin untuk menghapus semua catatan?</string>
+    <string name="delete_success">Semua catatan berhasil dihapus</string>
+    <string name="ok">Oke</string>
+    <string name="cancel">Batal</string>
+    <string name="alert_save_change">Simpan perubahan?</string>
+    <string name="yes">Ya</string>
+    <string name="no">Tidak</string>
+    <string name="edit_note">Ubah Catatan</string>
+    <string name="create_note">Buat Catatan</string>
+    <string name="delete_all_note">Hapus Semua Catatan</string>
+    <string name="about">Tentang</string>
+    <string name="empty_view">Tambahkan catatan baru  dengan menekan tombol +</string>
+    <string name="changed_failed">Catatan gagal diubah</string>
+    <string name="added_success">Catatan berhasil disimpan</string>
+    <string name="changed_success">Catatan berhasil diubah</string>
+    <string name="please_input">Masukkan Judul dan Isi Catatan</string>
+    <string name="share_to">Bagikan ke</string>
+    <string name="confirm_exit">Tekan lagi untuk keluar</string>
+    <string name="back">Kembali</string>
+    <string name="note_empty">Catatan kosong!</string>
+    <string name="not_changed">Anda belum mengubah apapun</string>
+
+</resources>

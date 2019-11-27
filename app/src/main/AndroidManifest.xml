@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.arsym.cathetan">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.SplashActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".utils.CopyToClipboardActivity"
+            android:exported="false"
+            android:icon="@drawable/ic_copy"
+            android:label="@string/copy_to_clipboard"
+            android:theme="@android:style/Theme.NoDisplay" />
+        <activity
+            android:name=".activity.ProfileActivity"
+            android:theme="@style/AboutTheme"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:theme="@style/AppTheme"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name=".activity.EditorActivity"
+            android:launchMode="singleTask"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/EditorTheme"
+            android:windowSoftInputMode="adjustResize" />
+    </application>
+
+</manifest>
