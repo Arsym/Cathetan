@@ -1,6 +1,7 @@
 package com.arsym.cathetan.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
@@ -100,4 +101,14 @@ public class ProfileActivity extends AppCompatActivity {
         overridePendingTransition(R.anim.slideclosein, R.anim.sidecloseout);
     }
 
+//    public void changeTheme(View view) {
+//        int mode = AppCompatDelegate.getDefaultNightMode();
+//        if (mode == AppCompatDelegate.MODE_NIGHT_YES) {
+//            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+//        } else {
+//            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+//        }
+//        startActivity(new Intent(this, ProfileActivity.class));
+//        finish();
+//    }
 }

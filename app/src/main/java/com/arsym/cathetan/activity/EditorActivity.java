@@ -12,9 +12,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.MotionEvent;
 import android.view.View;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -27,7 +25,6 @@ import com.r0adkll.slidr.model.SlidrInterface;
 import com.r0adkll.slidr.model.SlidrListener;
 import com.r0adkll.slidr.model.SlidrPosition;
 import com.thebluealliance.spectrum.SpectrumPalette;
-import com.thebluealliance.spectrum.internal.SelectedColorChangedEvent;
 
 import java.util.Date;
 
@@ -39,12 +36,10 @@ public class EditorActivity extends AppCompatActivity {
 
     private EditText et_title;
     private EditText et_note;
-    private androidx.appcompat.widget.Toolbar mToolbar;
 
     Menu actionmenu;
     int color, id;
     boolean edited = false;
-    boolean clicked = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -92,15 +87,15 @@ public class EditorActivity extends AppCompatActivity {
             }
         });
 
-        palette.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (id != 0) {
-                    edited = true;
-                    Log.v("CLICKED", "BISMILLAHIRAHMANIRAHIM");
-                }
-            }
-        });
+//        palette.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                if (id != 0) {
+//                    edited = true;
+//                }
+//            }
+//        });
+
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_back);
@@ -117,6 +112,7 @@ public class EditorActivity extends AppCompatActivity {
             setTitle(R.string.create_note);
             palette.setSelectedColor(getResources().getColor(R.color.white));
         }
+
 
         TextWatcher textTrigger = new TextWatcher() {
             @Override
@@ -244,6 +240,15 @@ public class EditorActivity extends AppCompatActivity {
             }
         }
 
+        overridePendingTransition(R.anim.slide_up, R.anim.slide_down);
+
     }
+
+    public void changeColor(View view) {
+        if (id != 0) {
+            edited = true;
+        }
+    }
+
 
 }

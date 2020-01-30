@@ -1,5 +1,6 @@
 package com.arsym.cathetan.activity;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -12,12 +13,14 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.core.content.ContextCompat;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
@@ -44,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
     private long backPressedTime;
     private Toast backToast;
     private boolean zero;
+    private Button darkMode;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,6 +77,7 @@ public class MainActivity extends AppCompatActivity {
                 adapter.submitList(notes);
             }
         });
+
 
         emptyView = findViewById(R.id.empty_view);
 
@@ -227,6 +232,15 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
+            case R.id.theme:
+                int mode = AppCompatDelegate.getDefaultNightMode();
+                if (mode == AppCompatDelegate.MODE_NIGHT_NO) {
+                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+                } else {
+                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+                }
+                recreate();
+                return true;
             case R.id.delete_all_notes:
                 if (zero) {
                     Toast.makeText(this, R.string.note_empty, Toast.LENGTH_SHORT).show();
@@ -254,10 +268,12 @@ public class MainActivity extends AppCompatActivity {
             case R.id.about:
                 Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
                 startActivity(intent);
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
     }
+
 
     @Override
     public void onBackPressed() {
@@ -273,6 +289,5 @@ public class MainActivity extends AppCompatActivity {
 
         backPressedTime = System.currentTimeMillis();
     }
-
 
 }

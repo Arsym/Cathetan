@@ -10,9 +10,9 @@
 
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/colorBackground">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
 
         <View
         android:layout_width="match_parent"
@@ -92,16 +92,16 @@
                                 android:textStyle="bold"
                                 android:layout_gravity="center"
                                 android:textSize="28sp"
-                                android:textColor="@color/colorBlack"
+                                android:textColor="@color/colorProfile"
                                 android:layout_marginBottom="25dp"
                                 android:layout_marginTop="70dp"
                                 />
 
                             <TextView
                                 android:id="@+id/nama"
-                                android:layout_above="@id/biodata"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:textColor="@color/textColorHint"
                                 android:text="Nama"
                                 />
 
@@ -113,7 +113,7 @@
                                 android:textSize="18sp"
                                 android:layout_gravity="center"
                                 android:layout_margin="10dp"
-                                android:textColor="@color/colorBlack"
+                                android:textColor="@color/textColorSecondary"
                                 />
 
                             <TextView
@@ -121,6 +121,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Tempat, Tanggal Lahir"
+                                android:textColor="@color/textColorHint"
                                 />
 
                             <TextView
@@ -131,7 +132,7 @@
                                 android:textSize="18sp"
                                 android:layout_gravity="center"
                                 android:layout_margin="10dp"
-                                android:textColor="@color/colorBlack"
+                                android:textColor="@color/textColorSecondary"
                                 />
 
 
@@ -140,6 +141,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="No. Telepon"
+                                android:textColor="@color/textColorHint"
                                 />
 
                             <TextView
@@ -151,12 +153,14 @@
                                 android:autoLink="phone"
                                 android:layout_gravity="center"
                                 android:layout_margin="10dp"
+                                android:textColorLink="@color/colorProfile"
                                 />
 
                             <TextView
                                 android:id="@+id/email"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:textColor="@color/textColorHint"
                                 android:text="Email"
                                 />
 
@@ -169,6 +173,7 @@
                                 android:autoLink="email"
                                 android:layout_gravity="center"
                                 android:layout_margin="10dp"
+                                android:textColorLink="@color/colorProfile"
                                 />
 
                         </LinearLayout>
@@ -185,6 +190,7 @@
                 android:layout_gravity="center"
                 android:textStyle="bold"
                 android:layout_marginBottom="10dp"
+                android:textColor="@color/textColorSecondary"
                 android:text="Kontak Saya"/>
 
             <LinearLayout
