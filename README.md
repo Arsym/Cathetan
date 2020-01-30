@@ -5,6 +5,7 @@ Features :
 - Swipe activity to close
 - Share note to clipboard or another app
 - Swipe note to delete
+- Dark Mode
 
 Bugs :
 - If new note added, the recyclerview didn't refresh. Scroll up to see new note
